@@ -3,8 +3,8 @@ import Task from "./Task";
 
 const ToDoList = ({ items, handleCheckbox, handleDeleteTask }) => {
   return (
-    <div className="d-flex justify-content-center align-items-center p-3 bg-secondary h-100 ">
-      <ul className="list-group bg-white  p-4">
+    <div className="d-flex justify-content-center align-items-center  bg-secondary h-50 ">
+      <ul style={{ flexBasis: 500 }} className="list-group bg-white  p-4 mb-3 ">
         {items.map((task) => (
           <Task
             task={task}

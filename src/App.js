@@ -41,6 +41,8 @@ function App() {
         backgroundColor: "grey",
         display: "flex",
         flexDirection: "column",
+
+        justifyContent: "center",
       }}
     >
       <NavBar items={items} handleCheckbox={handleCheckbox} />

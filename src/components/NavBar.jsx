@@ -1,9 +1,8 @@
 const NavBar = ({ items }) => {
   return (
-    <nav className="navbar bg-body-tertiary m-">
+    <nav className="navbar bg-body-tertiary ">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
-          Navbar{" "}
+        <a className="navbar-brand text-secondary" href="#">
           <span>
             {items.filter((item) => item.isComplete).length} tasks completed!
             Remaining tasks:
