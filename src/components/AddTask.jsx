@@ -17,14 +17,14 @@ const AddTask = ({ handleAddTask }) => {
   }
 
   return (
-    <div className="p-3 bg-secondary h-50 d-flex justify-content-center">
+    <div className="p-2 bg-secondary h-50 d-flex justify-content-center">
       <div
         style={{ flexBasis: 400 }}
-        className="rounded   bg-white d-flex flex-column align-items-center "
+        className="rounded   bg-white d-flex flex-column align-items-center justify-content-center "
       >
         <h2 className="text-secondary">Add Task Module</h2>
         <form
-          className="container  mt-3 d-flex align-items-center justify-content-between"
+          className="container  mt-1 mb-1 d-flex align-items-center justify-content-between"
           onSubmit={(event) => handleSubmit(event)}
         >
           <label className="me-2 text-secondary" htmlFor="taskInput">
