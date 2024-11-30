@@ -2,7 +2,7 @@ const AddTask = () => {
   return (
     <div className="p-3 bg-secondary h-50 d-flex justify-content-center">
       <div
-        style={{ flexBasis: 300 }}
+        style={{ flexBasis: 350 }}
         className="rounded   bg-white d-flex flex-column align-items-center "
       >
         <h2 className="text-secondary">Add Task Module</h2>
