@@ -1,6 +1,7 @@
 import NavBar from "./components/NavBar";
 import ToDoList from "./components/ToDoList";
 import Footer from "./components/Footer";
+import AddTask from "./components/AddTask";
 import { useState } from "react";
 function App() {
   let tasks = [
@@ -43,6 +44,8 @@ function App() {
       }}
     >
       <NavBar items={items} handleCheckbox={handleCheckbox} />
+
+      <AddTask />
       <ToDoList
         items={items}
         handleCheckbox={handleCheckbox}
