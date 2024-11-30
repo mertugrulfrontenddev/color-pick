@@ -6,7 +6,7 @@ const AddTask = () => {
         className="rounded   bg-white d-flex flex-column align-items-center "
       >
         <h2 className="text-secondary">Add Task Module</h2>
-        <form className="container  mt-4">
+        <form className="container  mt-3">
           <label className="me-2 text-secondary" htmlFor="taskInput">
             Add Task Name:
           </label>
