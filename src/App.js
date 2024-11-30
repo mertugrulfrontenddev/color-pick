@@ -10,10 +10,10 @@ function App() {
     { id: 3, taskName: "Jogging", isComplete: false },
   ];
 
-  let [items, setitems] = useState(tasks);
+  let [items, setItems] = useState(tasks);
 
   function handleCheckbox(event) {
-    setitems((prevItems) =>
+    setItems((prevItems) =>
       prevItems.map((item) =>
         item.id === Number(event.target.id)
           ? { ...item, isComplete: event.target.checked }
@@ -23,7 +23,7 @@ function App() {
   }
 
   function handleDeleteTask(taskId, event) {
-    setitems((prevItems) => {
+    setItems((prevItems) => {
       let taskToDelete = prevItems.find((task) => task.id === taskId);
 
       if (taskToDelete && !taskToDelete.isComplete) {
@@ -34,6 +34,14 @@ function App() {
       return prevItems.filter((task) => task.id !== taskId);
     });
   }
+
+  function handleAddTask(taskName) {
+    setItems((previtems) => [
+      ...previtems,
+      { id: Date.now(), taskName, isComplete: false },
+    ]);
+  }
+
   return (
     <div
       style={{
@@ -47,7 +55,7 @@ function App() {
     >
       <NavBar items={items} handleCheckbox={handleCheckbox} />
 
-      <AddTask />
+      <AddTask handleAddTask={handleAddTask} />
       <ToDoList
         items={items}
         handleCheckbox={handleCheckbox}

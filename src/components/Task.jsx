@@ -4,11 +4,11 @@ const Task = ({ task, handleCheckbox, handleDeleteTask }) => {
   return (
     <div className="container-fluid d-flex">
       <li
-        className="list-group-item me-3"
+        className="list-group-item m-1 py-0 h-50"
         id={task.id}
         data-tik={task.tiklama}
         style={{
-          flexBasis: 300,
+          flexBasis: 250,
           textDecoration: task.isComplete ? "line-through" : "none",
         }}
       >
@@ -27,7 +27,7 @@ const Task = ({ task, handleCheckbox, handleDeleteTask }) => {
         </div>
       </li>
       <button
-        className="btn btn-danger m-2"
+        className="btn btn-danger m-1 py-0"
         onClick={(event) => handleDeleteTask(task.id, event)}
       >
         X
